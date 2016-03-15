@@ -5,8 +5,8 @@ using System.Collections;
 public class EnemyAttackScript : MonoBehaviour
 {
 	public float timeBetweenAttacks = 1f;     
-	public int attackDamage = 10;              
-	
+	public int attackDamage = 10;
+    public int waitinghit = 3;
 	
 	Animator anim;                           
 	GameObject player;                          
@@ -28,19 +28,20 @@ public class EnemyAttackScript : MonoBehaviour
 	
 	void OnTriggerEnter (Collider other)
 	{
-
-		if(other.gameObject == player)
+       
+		if(other.gameObject == player&& timer> waitinghit)
 		{
 
 			playerInRange = true;
 		}
+        
 	}
 	
 	
 	void OnTriggerExit (Collider other)
 	{
-	
-		if(other.gameObject == player)
+       
+        if (other.gameObject == player)
 		{
 
 			playerInRange = false;
@@ -71,7 +72,7 @@ public class EnemyAttackScript : MonoBehaviour
 	
 	void Attack ()
 	{
-
+        
 		timer = 0f;
 		
 		anim.Play ("Attack");

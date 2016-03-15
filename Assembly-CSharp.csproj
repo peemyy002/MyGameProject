@@ -54,6 +54,12 @@
      <Compile Include="Assets\DragonFighter\Scripts\Player\PlayerAttack.cs" />
      <Compile Include="Assets\DragonFighter\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\DragonFighter\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\DragonFighter\Scripts\manager\Camerafollow.cs" />
+     <Compile Include="Assets\DragonFighter\Scripts\manager\Camerafollow1.cs" />
+     <Compile Include="Assets\DragonFighter\Scripts\manager\Camerafollow3.cs" />
+     <Compile Include="Assets\DragonFighter\Scripts\manager\EnemyManager.cs" />
+     <Compile Include="Assets\DragonFighter\Scripts\manager\GameOverManager.cs" />
+     <Compile Include="Assets\DragonFighter\Scripts\manager\PASSMAP.cs" />
      <Compile Include="Assets\SkySphere_V1\Examples\Gui.cs" />
      <Compile Include="Assets\SkySphere_V1\Examples\MouseLook.cs" />
      <None Include="Assets\AudioToolkit\Readme.txt" />

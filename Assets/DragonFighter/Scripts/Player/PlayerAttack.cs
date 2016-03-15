@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour {
     public short PlayerDamage = 60;
     EnemyHealth enemyHealth;
 	PlayerHealth playerHealth;
+    PlayerMovement playerMovement;
     GameObject go2;
     public float d = 100f;
     // Use this for initialization
@@ -14,6 +15,7 @@ public class PlayerAttack : MonoBehaviour {
 		anim = GetComponent <Animator> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent <PlayerHealth> ();
+        playerMovement = player.GetComponent<PlayerMovement>();
 	}
 	
 	// Update is called once per frame
@@ -25,7 +27,9 @@ public class PlayerAttack : MonoBehaviour {
     
           
             }
-        }
+
+        playerMovement.speed = 2.5f;
+    }
     
     void Attack()
     {
@@ -49,6 +53,10 @@ public class PlayerAttack : MonoBehaviour {
     void Attack2 ()
     {
         anim.Play("Attack");
+        
+            playerMovement.speed = 0;
+        
+        
     }
     void OnDrawGizmos()
     {
