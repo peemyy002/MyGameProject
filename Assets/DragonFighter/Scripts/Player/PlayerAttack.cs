@@ -7,8 +7,9 @@ public class PlayerAttack : MonoBehaviour {
     public short PlayerDamage = 60;
     EnemyHealth enemyHealth;
 	PlayerHealth playerHealth;
-	// Use this for initialization
-	void Awake () {
+    double d = 100f;
+    // Use this for initialization
+    void Awake () {
 		anim = GetComponent <Animator> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent <PlayerHealth> ();
@@ -16,16 +17,35 @@ public class PlayerAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Space) && playerHealth.currentHealth > 0) {
-			Attack ();
-
-
-		}
-	}
+           
+            RaycastHit hit;
+            Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        if (Physics.Raycast(transform.position, fwd, out hit, 100f))
+            {
+            GameObject go = hit.collider.gameObject;
+            if(go.tag == "Enemy")
+            {
+                Debug.Log("Enemy");
+            }
+            else
+            {
+                return;
+            }
+        }
+        if (Input.GetKey(KeyCode.Space) && playerHealth.currentHealth > 0)
+        {
+            Attack();
+        }
+    }
 	void Attack ()
 		{
 			anim.Play("Attack");
              enemyHealth = GetComponent<EnemyHealth>();
             enemyHealth.TakeDamage(PlayerDamage);
 		}
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + (100f * transform.forward));
+    }
 }

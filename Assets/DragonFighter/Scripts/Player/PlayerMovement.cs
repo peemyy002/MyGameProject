@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        Debug.Log(h);
+        
 
         Move(h, v);
         Animating(h, v);

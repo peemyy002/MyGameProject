@@ -45,9 +45,9 @@ public class PlayerHealth : MonoBehaviour
 		{
 			damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
 		}
+        damaged = false;
 
-
-	}
+    }
 	
 	
 	public void TakeDamage (int amount)
@@ -56,15 +56,15 @@ public class PlayerHealth : MonoBehaviour
 		currentHealth -= amount;
 		healthSlider.value = currentHealth;
 		anim.Play("Damage");
-		 
+       
 
-		playerAudio.Play ();
+        playerAudio.Play ();
 
 		if(currentHealth <= 0 && !isDead)
 		{
 			Death ();
 		}
-		damaged = false;
+       
 	}
 	
 	
