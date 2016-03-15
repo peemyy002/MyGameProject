@@ -1,0 +1,114 @@
+newmtl Bougu
+Kd 1 1 1
+Ke 1 1 1
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+Ns 25399
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Default
+Kd 0.6 0.6 0.6
+Ke 0 0 0
+Ka 0.78 0.78 0.78
+Ks 0 0 0
+Ns 0
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Face
+Kd 1 1 1
+Ke 1 1 1
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+Ns 25399
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Shadow
+Kd 1 1 1
+Ke 1 1 1
+Ka 0.8 0.8 0.8
+Ks 0.2 0.2 0.2
+Ns 25400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Sword02
+Kd 0.6 0.6 0.6
+Ke 1 1 1
+Ka 0.1 0.1 0.1
+Ks 0.2 0.2 0.2
+Ns 25399
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Bougu
+Kd 1 1 1
+Ke 1 1 1
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+Ns 25399
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd C:Users/Peem/Desktop/MiniProject/DragonFighter/DragonFighters/Assets/DragonFighter/Charactor/Cha_Data/Character/Cha_Knight/Models/Cha_Knight_Guard001.jpg
+
+newmtl Default
+Kd 0.6 0.6 0.6
+Ke 0 0 0
+Ka 0.78 0.78 0.78
+Ks 0 0 0
+Ns 0
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Face
+Kd 1 1 1
+Ke 1 1 1
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+Ns 25399
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd C:Users/Peem/Desktop/MiniProject/DragonFighter/DragonFighters/Assets/DragonFighter/Charactor/Cha_Data/Character/Cha_Knight/Models/Cha_Knight.jpg
+
+newmtl Shadow_1
+Kd 1 1 1
+Ke 1 1 1
+Ka 0.8 0.8 0.8
+Ks 0.2 0.2 0.2
+Ns 25400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd C:Users/Peem/Desktop/MiniProject/DragonFighter/DragonFighters/Assets/DragonFighter/Charactor/Cha_Data/Character/Cha_Knight/Models/Shadow.jpg
+
+newmtl Sword02
+Kd 0.6 0.6 0.6
+Ke 1 1 1
+Ka 0.1 0.1 0.1
+Ks 0.2 0.2 0.2
+Ns 25399
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd C:Users/Peem/Desktop/MiniProject/DragonFighter/DragonFighters/Assets/DragonFighter/Charactor/Cha_Data/Character/Cha_Knight/Models/Cha_Knight_Sword02.jpg
+
