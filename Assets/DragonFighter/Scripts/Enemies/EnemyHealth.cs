@@ -42,23 +42,16 @@ public class EnemyHealth : MonoBehaviour
 		if(isDead)
 
 			return;
-		
 
+        anim.Play("Damage");
 		enemyAudio.Play ();
-		
-
 		currentHealth -= amount;
-		
-
-
-		
-
-				
 
 		if(currentHealth <= 0)
 		{
 
 			Death ();
+            StartSinking();
 		}
 	}
 	

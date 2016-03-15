@@ -50,6 +50,7 @@
      <None Include="Assets\AudioToolkit\Readme.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
+     <None Include="Assets\DragonFighter\Material\Materials\NewSurfaceShader.shader" />
      <None Include="Assets\Charactor\Cha_Data\Shader\WrapLambert.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
@@ -69,9 +70,6 @@
  <Reference Include="Assembly-UnityScript">
  <HintPath>C:/Users/peemh/Desktop/MyGameProject/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -87,8 +85,11 @@
  <Reference Include="UnityEditor.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <Reference Include="AudioToolkit_FreeVersion">
+ <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/AudioToolkit_FreeVersion.dll</HintPath>
+ </Reference>
+ <Reference Include="AudioToolkit_FreeVersion_Editor">
+ <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/Editor/AudioToolkit_FreeVersion_Editor.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
  <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/RAIN/RAIN.dll</HintPath>
@@ -128,12 +129,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="AudioToolkit_FreeVersion">
- <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/AudioToolkit_FreeVersion.dll</HintPath>
- </Reference>
- <Reference Include="AudioToolkit_FreeVersion_Editor">
- <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/Editor/AudioToolkit_FreeVersion_Editor.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -7,7 +7,8 @@ public class PlayerAttack : MonoBehaviour {
     public short PlayerDamage = 60;
     EnemyHealth enemyHealth;
 	PlayerHealth playerHealth;
-    double d = 100f;
+    GameObject go2;
+    public float d = 100f;
     // Use this for initialization
     void Awake () {
 		anim = GetComponent <Animator> ();
@@ -17,35 +18,41 @@ public class PlayerAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-           
-            RaycastHit hit;
-            Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(transform.position, fwd, out hit, 100f))
-            {
-            GameObject go = hit.collider.gameObject;
-            if(go.tag == "Enemy")
-            {
-                Debug.Log("Enemy");
-            }
-            else
-            {
-                return;
-            }
-        }
-        if (Input.GetKey(KeyCode.Space) && playerHealth.currentHealth > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && playerHealth.currentHealth > 0)
         {
-            Attack();
+            Attack2();
+     
+    
+          
+            }
         }
+    
+    void Attack()
+    {
+        RaycastHit hit;
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        if (Physics.Raycast(transform.position, fwd, out hit, d))
+        {
+            GameObject go = hit.collider.gameObject;
+            go2 = go;
+            if (go.tag == "Enemy")
+            {
+                enemyHealth =go.GetComponent<EnemyHealth>();
+                enemyHealth.TakeDamage(PlayerDamage);
+
+            }
+            else { return; }
+
+        }
+
     }
-	void Attack ()
-		{
-			anim.Play("Attack");
-             enemyHealth = GetComponent<EnemyHealth>();
-            enemyHealth.TakeDamage(PlayerDamage);
-		}
+    void Attack2 ()
+    {
+        anim.Play("Attack");
+    }
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + (100f * transform.forward));
+        Gizmos.DrawLine(transform.position, transform.position + (d * transform.forward));
     }
 }

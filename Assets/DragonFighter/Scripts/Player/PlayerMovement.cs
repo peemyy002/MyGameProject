@@ -51,11 +51,13 @@ public class PlayerMovement : MonoBehaviour
 		bool walking = h != 0f || v != 0f;
         if (h > 0)
         {
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.Euler(0, 90, 0), Time.deltaTime*2);
+            // this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.Euler(0, 90, 0), Time.deltaTime*2);
+            transform.forward = Vector3.right;
         }
         else if (h<0)
         {
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.Euler(0, -90, 0), Time.deltaTime*2);
+            //this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.Euler(0, -90, 0), Time.deltaTime*2);
+            transform.forward = Vector3.left;
         }
 		anim.SetBool ("IsWalking", walking);
 	}
