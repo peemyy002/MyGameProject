@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_CS.cs" />
+     <None Include="Assets\AudioToolkit\Readme.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
      <None Include="Assets\Charactor\Cha_Data\Shader\WrapLambert.shader" />
@@ -61,6 +62,7 @@
      <None Include="Assets\RAIN\ReleaseNotes.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
+     <None Include="Assets\FootstepsSoundsCarpetPack\FootstepsSoundsCarpetPackInfo.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/peemh/Desktop/MyGameProject/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
@@ -126,6 +128,12 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="AudioToolkit_FreeVersion">
+ <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/AudioToolkit_FreeVersion.dll</HintPath>
+ </Reference>
+ <Reference Include="AudioToolkit_FreeVersion_Editor">
+ <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/Editor/AudioToolkit_FreeVersion_Editor.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

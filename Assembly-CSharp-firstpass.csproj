@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <None Include="Assets\AudioToolkit\Readme.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
      <None Include="Assets\Charactor\Cha_Data\Shader\WrapLambert.shader" />
@@ -60,6 +61,7 @@
      <None Include="Assets\RAIN\ReleaseNotes.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
+     <None Include="Assets\FootstepsSoundsCarpetPack\FootstepsSoundsCarpetPackInfo.txt" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -77,6 +79,9 @@
  </Reference>
  <Reference Include="RAINMetaform">
  <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/RAIN/RAINMetaform.dll</HintPath>
+ </Reference>
+ <Reference Include="AudioToolkit_FreeVersion">
+ <HintPath>C:/Users/peemh/Desktop/MyGameProject/Assets/AudioToolkit/AudioToolkit/AudioToolkit_FreeVersion.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
